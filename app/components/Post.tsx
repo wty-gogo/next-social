@@ -12,7 +12,7 @@ function Post() {
                         alt={'avatar'} className={'w-10 h-10 rounded-full'} width={40} height={40}/>
                     <span className={'font-medium'}>Hades Wang</span>
                 </div>
-                <Image src={'/more.png'} alt={'more'} width={16} height={16}/>
+                <Image src={'/more.png'} alt={'more'} width={16} height={16} className={'cursor-pointer'}/>
             </div>
             {/*Desc*/}
             <div className={'flex flex-col gap-4'}>
