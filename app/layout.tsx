@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import './globals.css'
 import Navbar from '@/app/components/Navbar'
 import {ClerkProvider} from '@clerk/nextjs'
+import React from 'react'
 
 const geistSans = localFont({
     src: './fonts/GeistVF.woff',
@@ -28,9 +29,9 @@ export default function RootLayout(
     }>) {
     return (
         <ClerkProvider>
-            <html lang="en">
+            <html lang="en" className={'scrollbar-hide'}>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased scrollbar-hide`}
             >
             <div className="w-full bg-white px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
                 <Navbar/>

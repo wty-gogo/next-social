@@ -17,8 +17,8 @@ function RightMenu(props: RightMenuProps) {
         <div className={'flex flex-col gap-6'}>
             {
                 userId && <>
-                    <UserInfoCard/>
-                    <UserMediaCard/>
+                    <UserInfoCard userId={userId}/>
+                    <UserMediaCard userId={userId}/>
                 </>
             }
             <FriendRequests/>

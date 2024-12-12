@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="feat: right menu completed">
-      <change afterPath="$PROJECT_DIR$/app/components/Ad.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Birthdays.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/FriendRequests.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UserInfoCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UserMediaCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/app/components/ProfileCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LeftMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/RightMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/profile/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/profile/[id]/page.tsx" afterDir="false" />
     </list>
@@ -41,6 +38,9 @@
     &quot;accountId&quot;: &quot;9bb511ce-e858-4bf1-bfc8-3f79949888a8&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -63,7 +63,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.sourceCode.HTML",
     "ts.external.directory.path": "C:\\Users\\wty33\\WebstormProjects\\next-social\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -93,7 +93,7 @@
       <updated>1733807781106</updated>
       <workItem from="1733807782506" duration="17673000" />
       <workItem from="1733880536960" duration="19620000" />
-      <workItem from="1733968410316" duration="14074000" />
+      <workItem from="1733968410316" duration="18971000" />
     </task>
     <task id="LOCAL-00001" summary="feat: NavBar">
       <option name="closed" value="true" />
@@ -111,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733974528233</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: right menu completed">
+      <option name="closed" value="true" />
+      <created>1733990746958</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733990746958</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
