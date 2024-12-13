@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="feat: all ui done">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/next-social.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/webhooks/clerk/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/client.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/AddPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AddPost.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +87,7 @@
       <workItem from="1733807782506" duration="17673000" />
       <workItem from="1733880536960" duration="19620000" />
       <workItem from="1733968410316" duration="20005000" />
-      <workItem from="1734052961485" duration="14637000" />
+      <workItem from="1734052961485" duration="15012000" />
     </task>
     <task id="LOCAL-00001" summary="feat: NavBar">
       <option name="closed" value="true" />
@@ -133,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733995767806</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: user data sync">
+      <option name="closed" value="true" />
+      <created>1734076165718</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734076165718</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +151,7 @@
     <MESSAGE value="feat: page center ui done" />
     <MESSAGE value="feat: right menu completed" />
     <MESSAGE value="feat: all ui done" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: all ui done" />
+    <MESSAGE value="feat: user data sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: user data sync" />
   </component>
 </project>
