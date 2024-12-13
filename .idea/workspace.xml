@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/ProfileCard.tsx" afterDir="false" />
+    <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="feat: all ui done">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/next-social.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/webhooks/clerk/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LeftMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/RightMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/profile/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/profile/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AddPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AddPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,24 +54,25 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/wty33/WebstormProjects/next-social",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.HTML",
-    "ts.external.directory.path": "C:\\Users\\wty33\\WebstormProjects\\next-social\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wty33/WebstormProjects/next-social-safak-github&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.prisma&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\wty33\\WebstormProjects\\next-social\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wty33\WebstormProjects\next-social" />
@@ -93,7 +98,8 @@
       <updated>1733807781106</updated>
       <workItem from="1733807782506" duration="17673000" />
       <workItem from="1733880536960" duration="19620000" />
-      <workItem from="1733968410316" duration="18971000" />
+      <workItem from="1733968410316" duration="20005000" />
+      <workItem from="1734052961485" duration="14637000" />
     </task>
     <task id="LOCAL-00001" summary="feat: NavBar">
       <option name="closed" value="true" />
@@ -119,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733990746958</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: all ui done">
+      <option name="closed" value="true" />
+      <created>1733995767806</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733995767806</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +154,7 @@
     <MESSAGE value="feat: NavBar" />
     <MESSAGE value="feat: page center ui done" />
     <MESSAGE value="feat: right menu completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: right menu completed" />
+    <MESSAGE value="feat: all ui done" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: all ui done" />
   </component>
 </project>
