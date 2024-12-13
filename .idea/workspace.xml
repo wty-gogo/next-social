@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,7 @@
       <workItem from="1733807782506" duration="17673000" />
       <workItem from="1733880536960" duration="19620000" />
       <workItem from="1733968410316" duration="20005000" />
-      <workItem from="1734052961485" duration="15981000" />
+      <workItem from="1734052961485" duration="17165000" />
     </task>
     <task id="LOCAL-00001" summary="feat: NavBar">
       <option name="closed" value="true" />
@@ -155,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734077100765</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix: fix redirect too much">
+      <option name="closed" value="true" />
+      <created>1734077445169</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734077445169</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +188,7 @@
     <MESSAGE value="feat: all ui done" />
     <MESSAGE value="feat: user data sync" />
     <MESSAGE value="fix: run prisma generate" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: run prisma generate" />
+    <MESSAGE value="fix: fix redirect too much" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix redirect too much" />
   </component>
 </project>
