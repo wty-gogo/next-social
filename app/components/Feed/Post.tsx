@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Comments from '@/app/components/Comments'
+import Comments from '@/app/components/Feed/Comments'
 
 function Post() {
     return (

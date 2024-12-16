@@ -1,5 +1,5 @@
 import React from 'react'
-import Post from '@/app/components/Post'
+import Post from '@/app/components/Feed/Post'
 
 function Feed() {
     return (

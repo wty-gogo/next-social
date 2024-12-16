@@ -1,8 +1,8 @@
 import LeftMenu from '@/app/components/LeftMenu'
-import RightMenu from '@/app/components/RightMenu'
 import Stories from '@/app/components/Stories'
 import AddPost from '@/app/components/AddPost'
 import Feed from '@/app/components/Feed'
+import RightMenu from '@/app/components/RightMenu'
 
 function HomePage() {
     return (

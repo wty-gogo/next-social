@@ -1,7 +1,7 @@
-import ProfileCard from '@/app/components/ProfileCard'
 import Link from 'next/link'
 import Image from 'next/image'
 import Ad from '@/app/components/Ad'
+import ProfileCard from '@/app/components/LeftMenu/ProfileCard'
 
 type LeftMenuProps = {
     type: 'home' | 'profile'
