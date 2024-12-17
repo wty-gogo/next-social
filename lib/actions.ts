@@ -54,7 +54,6 @@ export const switchFollow = async (userId: string) => {
     return 1
 }
 
-
 export const switchBlock = async (userId: string) => {
     const {userId: currentUserId} = await auth()
     if (!currentUserId) {
@@ -78,6 +77,60 @@ export const switchBlock = async (userId: string) => {
                 data: {
                     blockedId: userId,
                     blockerId: currentUserId
+                }
+            })
+        }
+    } catch (e) {
+        throw e
+    }
+}
+
+export const acceptFollowRequest = async (userId: string) => {
+    const {userId: currentUserId} = await auth()
+    if (!currentUserId) {
+        throw new Error('User is not authorized')
+    }
+    try {
+        const existingFollowingRequest = await prisma.followRequest.findFirst({
+            where: {
+                senderId: userId,
+                receiverId: currentUserId
+            }
+        })
+        if (!!existingFollowingRequest) {
+            await prisma.followRequest.delete({
+                where: {
+                    id: existingFollowingRequest.id
+                }
+            })
+        }
+        await prisma.follower.create({
+            data: {
+                followingId: currentUserId,
+                followerId: userId
+            }
+        })
+    } catch (e) {
+        throw e
+    }
+}
+
+export const declineFollowRequest = async (userId: string) => {
+    const {userId: currentUserId} = await auth()
+    if (!currentUserId) {
+        throw new Error('User is not authorized')
+    }
+    try {
+        const existingFollowingRequest = await prisma.followRequest.findFirst({
+            where: {
+                senderId: userId,
+                receiverId: currentUserId
+            }
+        })
+        if (!!existingFollowingRequest) {
+            await prisma.followRequest.delete({
+                where: {
+                    id: existingFollowingRequest.id
                 }
             })
         }

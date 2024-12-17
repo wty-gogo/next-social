@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import {auth} from '@clerk/nextjs/server'
 import {prisma} from '@/lib'
+import FriendRequestList from '@/app/components/RightMenu/FriendRequestList'
 
 async function FriendRequests() {
 
@@ -28,24 +29,7 @@ async function FriendRequests() {
                 <Link href={'/'} className={'text-xs text-blue-500'}>See All</Link>
             </div>
             {/*User*/}
-            {
-                requests.map((request) => (
-                    <div className={'flex items-center justify-between '}>
-                        <div className={'flex items-center gap-4'}>
-                            <Image
-                                src={request.sender.avatar || '/noAvatar.png'}
-                                alt={''} width={40} height={40} className={'w-10 h-10 rounded-full object-cover'}/>
-                            <span className={'font-bold'}>Chris Wash</span>
-                        </div>
-                        <div className={'flex gap-3'}>
-                            <Image src={'/accept.png'} alt={'accept'} width={16} height={16}
-                                   className={'cursor-pointer'}/>
-                            <Image src={'/reject.png'} alt={'accept'} width={16} height={16}
-                                   className={'cursor-pointer'}/>
-                        </div>
-                    </div>
-                ))
-            }
+            <FriendRequestList requests={requests} />
         </div>
     )
 }
