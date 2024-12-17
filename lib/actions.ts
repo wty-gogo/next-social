@@ -81,6 +81,7 @@ export const switchBlock = async (userId: string) => {
             })
         }
     } catch (e) {
+        console.error(e)
         throw e
     }
 }
@@ -111,6 +112,7 @@ export const acceptFollowRequest = async (userId: string) => {
             }
         })
     } catch (e) {
+        console.error(e)
         throw e
     }
 }
@@ -135,6 +137,7 @@ export const declineFollowRequest = async (userId: string) => {
             })
         }
     } catch (e) {
+        console.error(e)
         throw e
     }
 }

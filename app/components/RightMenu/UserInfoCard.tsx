@@ -51,7 +51,7 @@ async function UserInfoCard(props: UserInfoCardProps) {
                 <span className={'text-gray-500'}>User Information</span>
                 {
                     currentUserId === user.id
-                        ? <UpdateUser/>
+                        ? <UpdateUser user={user} />
                         : <Link href={'/'} className={'text-xs text-blue-500'}>See All</Link>
                 }
             </div>

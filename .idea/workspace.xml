@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/RightMenu/FriendRequestList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/RightMenu/FriendRequests.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/FriendRequests.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/RightMenu/FriendRequestList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/FriendRequestList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/RightMenu/UpdateUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/UpdateUser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/RightMenu/UserInfoCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/UserInfoCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +33,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:wty-gogo/next-social.git&quot;,
-    &quot;accountId&quot;: &quot;9bb511ce-e858-4bf1-bfc8-3f79949888a8&quot;
+    &quot;url&quot;: &quot;https://github.com/wty-gogo/next-social&quot;,
+    &quot;accountId&quot;: &quot;ab96ae7c-5ab0-4520-9264-2904c44384a5&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -65,7 +66,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "D:/fnm/aliases/default/node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
+    "settings.editor.selected.configurable": "configurable.tailwindcss",
     "ts.external.directory.path": "D:\\WebstormProjects\\next-social\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -114,7 +115,9 @@
       <workItem from="1734328254469" duration="3363000" />
       <workItem from="1734332026431" duration="12888000" />
       <workItem from="1734398379734" duration="1223000" />
-      <workItem from="1734402620626" duration="5214000" />
+      <workItem from="1734402620626" duration="5445000" />
+      <workItem from="1734416101096" duration="2990000" />
+      <workItem from="1734419287685" duration="7434000" />
     </task>
     <task id="LOCAL-00001" summary="feat: NavBar">
       <option name="closed" value="true" />
@@ -204,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734404241828</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: 好友请求">
+      <option name="closed" value="true" />
+      <created>1734414985959</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1734414985959</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +242,7 @@
     <MESSAGE value="fix: fix redirect too much" />
     <MESSAGE value="feat: 接了个人信息的接口" />
     <MESSAGE value="fix: 构建失败修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 构建失败修复" />
+    <MESSAGE value="feat: 好友请求" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 好友请求" />
   </component>
 </project>
