@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/RightMenu/UpdateUser.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/RightMenu/UserInfoCardInteraction.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/noCover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Birthdays.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/Birthdays.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Comments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/Comments.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Feed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/FriendRequests.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/FriendRequests.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LeftMenu/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/Post.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ProfileCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LeftMenu/ProfileCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/RightMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserInfoCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/UserInfoCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserMediaCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/UserMediaCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/profile/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/profile/[username]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +53,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "20.18.1",
-    "javascript.nodejs.core.library.typings.version": "",
+    "javascript.nodejs.core.library.typings.version": "20.17.10",
     "last_opened_file_path": "C:/Users/wty33/WebstormProjects/next-social-safak-github",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -117,7 +98,9 @@
       <workItem from="1733968410316" duration="20005000" />
       <workItem from="1734052961485" duration="17165000" />
       <workItem from="1734328254469" duration="3363000" />
-      <workItem from="1734332026431" duration="12673000" />
+      <workItem from="1734332026431" duration="12888000" />
+      <workItem from="1734398379734" duration="1223000" />
+      <workItem from="1734402620626" duration="953000" />
     </task>
     <task id="LOCAL-00001" summary="feat: NavBar">
       <option name="closed" value="true" />
@@ -191,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734077445169</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: 接了个人信息的接口">
+      <option name="closed" value="true" />
+      <created>1734345033229</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734345033229</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +207,7 @@
     <MESSAGE value="feat: user data sync" />
     <MESSAGE value="fix: run prisma generate" />
     <MESSAGE value="fix: fix redirect too much" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fix redirect too much" />
+    <MESSAGE value="feat: 接了个人信息的接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 接了个人信息的接口" />
   </component>
 </project>

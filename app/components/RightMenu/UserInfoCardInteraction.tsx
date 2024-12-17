@@ -11,7 +11,7 @@ type UserInfoCardInteractionProps = {
 }
 
 function UserInfoCardInteraction(props: UserInfoCardInteractionProps) {
-    const {targetUserId, currentUserId, isUserBlocked, isFollowing, isFollowingRequestSent} = props
+    const {targetUserId, isUserBlocked, isFollowing, isFollowingRequestSent} = props
 
     const [userState, setUserState] = useState({
         followingRequestSent: isFollowingRequestSent,
