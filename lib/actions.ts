@@ -2,6 +2,7 @@
 
 import {auth} from '@clerk/nextjs/server'
 import prisma from '@/lib/client'
+import {z} from 'zod'
 
 export const switchFollow = async (userId: string) => {
     const {userId: currentUserId} = await auth()
@@ -133,6 +134,107 @@ export const declineFollowRequest = async (userId: string) => {
             await prisma.followRequest.delete({
                 where: {
                     id: existingFollowingRequest.id
+                }
+            })
+        }
+    } catch (e) {
+        console.error(e)
+        throw e
+    }
+}
+
+export const updateProfile = async (
+    state: { success: boolean, error: boolean },
+    payload: { formData: FormData, cover: string }
+) => {
+
+    const {formData, cover} = payload
+
+    const fields = Object.fromEntries(formData)
+
+    const filteredFields = Object.fromEntries(
+        Object.entries(fields).filter(([_, value]) => !!value)
+    )
+
+    const Profile = z.object({
+        cover: z.string().optional(),
+        name: z.string().max(60).optional(),
+        surname: z.string().max(60).optional(),
+        description: z.string().max(255).optional(),
+        city: z.string().max(60).optional(),
+        school: z.string().max(60).optional(),
+        website: z.string().max(60).optional(),
+        work: z.string().max(60).optional(),
+    })
+
+    const validatedFields = Profile.safeParse({...filteredFields, cover})
+
+    if (!validatedFields.success) {
+        const data = validatedFields.data
+        console.error(validatedFields.error.flatten().fieldErrors)
+        return {
+            success: false,
+            error: true
+        }
+    }
+
+    if (!validatedFields.data) {
+        return {
+            success: false,
+            error: true
+        }
+    }
+
+    const {userId: currentUserId} = await auth()
+
+    if (!currentUserId) {
+        throw new Error('User is not authorized')
+    }
+
+    try {
+        await prisma.user.update({
+            where: {
+                id: currentUserId
+            },
+            data: validatedFields.data
+        })
+        return {
+            success: true,
+            error: false
+        }
+    } catch (e) {
+        console.log(e)
+        return {
+            success: false,
+            error: true
+        }
+    }
+
+}
+
+export const switchLike = async (postId: number) => {
+    const {userId: currentUserId} = await auth()
+    if (!currentUserId) {
+        throw new Error('User is not authorized')
+    }
+    try {
+        const existingLike = await prisma.like.findFirst({
+            where: {
+                userId: currentUserId,
+                postId: postId
+            }
+        })
+        if (!!existingLike) {
+            await prisma.like.delete({
+                where: {
+                    id: existingLike.id
+                }
+            })
+        } else {
+            await prisma.like.create({
+                data: {
+                    userId: currentUserId,
+                    postId: postId
                 }
             })
         }

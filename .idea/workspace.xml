@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="feat: 新增">
+      <change afterPath="$PROJECT_DIR$/app/components/Feed/CommentList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Feed/PostInteraction.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/RightMenu/UpdateButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/RightMenu/FriendRequestList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/FriendRequestList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Feed/Comments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/Comments.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Feed/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/Post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Feed/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/RightMenu/UpdateUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/UpdateUser.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/RightMenu/UserInfoCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/RightMenu/UserInfoCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/profile/[username]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/profile/[username]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +74,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "D:/fnm/aliases/default/node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.tailwindcss",
+    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
     "ts.external.directory.path": "D:\\WebstormProjects\\next-social\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -101,6 +109,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\wty33\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="" />
@@ -118,6 +129,7 @@
       <workItem from="1734402620626" duration="5445000" />
       <workItem from="1734416101096" duration="2990000" />
       <workItem from="1734419287685" duration="7434000" />
+      <workItem from="1734485783040" duration="21324000" />
     </task>
     <task id="LOCAL-00001" summary="feat: NavBar">
       <option name="closed" value="true" />

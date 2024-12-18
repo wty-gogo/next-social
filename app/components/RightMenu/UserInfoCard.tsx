@@ -51,7 +51,7 @@ async function UserInfoCard(props: UserInfoCardProps) {
                 <span className={'text-gray-500'}>User Information</span>
                 {
                     currentUserId === user.id
-                        ? <UpdateUser user={user} />
+                        ? <UpdateUser user={user}/>
                         : <Link href={'/'} className={'text-xs text-blue-500'}>See All</Link>
                 }
             </div>
@@ -59,7 +59,9 @@ async function UserInfoCard(props: UserInfoCardProps) {
             <div className={'flex flex-col gap-4 text-gray-500'}>
                 <div className={'flex items-center gap-2'}>
                     <span
-                        className={'text-xl text-black'}>{user.name && user.surname ? user.name + ' ' + user.surname : user.username}</span>
+                        className={'text-xl text-black'}>{user.name && user.surname
+                        ? user.name + ' ' + user.surname
+                        : user.username}</span>
                     <span className={'text-sm'}>@{user.username}</span>
                 </div>
                 {/*Description*/}
@@ -79,7 +81,7 @@ async function UserInfoCard(props: UserInfoCardProps) {
                 {
                     user.work && <div className={'flex items-center gap-2'}>
                         <Image src={'/work.png'} alt={'work'} width={16} height={16}/>
-                        <span>Works at <b>{user.work}</b></span>
+                        <span>Work at <b>{user.work}</b></span>
                     </div>
                 }
                 <div className={'flex items-center justify-between'}>

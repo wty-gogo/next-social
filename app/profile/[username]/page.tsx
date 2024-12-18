@@ -86,7 +86,7 @@ async function ProfilePage(props: ProfilePageProps) {
                             </div>
                         </div>
                     </div>
-                    <Feed/>
+                    <Feed username={username}/>
                 </div>
             </div>
             <div className={'hidden lg:block w-[30%]'}>
