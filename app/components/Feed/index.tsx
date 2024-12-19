@@ -43,16 +43,16 @@ async function Feed(props: FeedProps) {
             })
         } else {
 
-            const followingIds = (
-                await prisma.follower.findMany({
-                    where: {
-                        followerId: currentUserId
-                    },
-                    select: {
-                        followingId: true
-                    }
-                })
-            ).map(v => v.followingId)
+            const followingIds = (await prisma.follower.findMany({
+                where: {
+                    followerId: currentUserId
+                },
+                select: {
+                    followingId: true
+                }
+            }))
+                .map(v => v.followingId)
+                .concat(currentUserId)
 
             return prisma.post.findMany({
                 where: {
@@ -87,8 +87,8 @@ async function Feed(props: FeedProps) {
         <div className={'p-4 bg-white shadow-md rounded-lg flex flex-col gap-12'}>
             {
                 posts?.length
-                    ? posts.map(post => (<Post post={post} key={post.id}/>))
-                    : 'No posts found.'
+                ? posts.map(post => (<Post post={post} key={post.id}/>))
+                : 'No posts found.'
             }
         </div>
     )

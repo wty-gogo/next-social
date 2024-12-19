@@ -3,6 +3,7 @@
 import {auth} from '@clerk/nextjs/server'
 import prisma from '@/lib/client'
 import {z} from 'zod'
+import {revalidatePath} from 'next/cache'
 
 export const switchFollow = async (userId: string) => {
     const {userId: currentUserId} = await auth()
@@ -241,5 +242,94 @@ export const switchLike = async (postId: number) => {
     } catch (e) {
         console.error(e)
         throw e
+    }
+}
+
+export const addComment = async (postId: number, desc: string) => {
+    const {userId: currentUserId} = await auth()
+    if (!currentUserId) {
+        throw new Error('User is not authorized')
+    }
+    try {
+        return await prisma.comment.create({
+            data: {
+                postId: postId,
+                desc: desc,
+                userId: currentUserId
+            },
+            include: {
+                user: true
+            },
+        })
+    } catch (e) {
+        console.error(e)
+        throw e
+    }
+}
+
+export const addPost = async (formData: FormData, img: string) => {
+    const desc = formData.get('desc')
+
+    const Desc = z.string().min(1).max(255)
+
+    const validatedDesc = Desc.safeParse(desc)
+
+    if (!validatedDesc.success) {
+        return validatedDesc.error
+    }
+
+    const {userId: currentUserId} = await auth()
+
+    if (!currentUserId) {
+        throw new Error('User is not authorized')
+    }
+
+    try {
+        await prisma.post.create({
+            data: {
+                desc: validatedDesc.data,
+                userId: currentUserId,
+                img: img
+            }
+        })
+        revalidatePath('/')
+    } catch (e) {
+
+    }
+}
+
+export const addStory = async (img: string) => {
+
+    const {userId: currentUserId} = await auth()
+
+    if (!currentUserId) {
+        throw new Error('User is not authorized')
+    }
+
+    try {
+        const existingStory = await prisma.story.findFirst({
+            where: {
+                userId: currentUserId
+            }
+        })
+        if (!!existingStory){
+            await prisma.story.delete({
+                where: {
+                    id: existingStory.id
+                }
+            })
+        }
+        return await prisma.story.create({
+            data: {
+                expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                img: img,
+                userId: currentUserId
+            },
+            include: {
+                user: true
+            }
+        })
+    } catch (e) {
+
     }
 }
