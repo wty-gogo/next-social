@@ -312,7 +312,7 @@ export const addStory = async (img: string) => {
                 userId: currentUserId
             }
         })
-        if (!!existingStory){
+        if (!!existingStory) {
             await prisma.story.delete({
                 where: {
                     id: existingStory.id
@@ -332,4 +332,23 @@ export const addStory = async (img: string) => {
     } catch (e) {
 
     }
+}
+
+export const deletePost = async (postId: number) => {
+    const {userId: currentUserId} = await auth()
+    if (!currentUserId) {
+        throw new Error('User is not authorized')
+    }
+    try {
+        await prisma.post.delete({
+            where: {
+                id: postId,
+                userId: currentUserId
+            }
+        })
+        revalidatePath('/')
+    } catch (e) {
+        throw e
+    }
+
 }

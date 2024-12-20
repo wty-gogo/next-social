@@ -37,6 +37,7 @@ function StoryList(props: StoryListProps) {
 
         try {
             const createdStory = await addStory(img?.secure_url)
+            setImg(null)
             setStoryList((prevState) => {
                 return [createdStory!, ...prevState]
             })
@@ -53,12 +54,14 @@ function StoryList(props: StoryListProps) {
             }}>
                 {({open}) => {
                     return (
-                        <div className={'flex flex-col gap-2 cursor-pointer items-center relative'}
-                             onClick={() => open()}>
-                            <Image width={80} height={80} className={'w-20 h-20 rounded-full ring-2 object-cover'}
-                                   src={img?.secure_url || user?.avatar || '/noAvatar.png'}
-                                   alt=""
-                            />
+                        <div className={'flex flex-col gap-2 cursor-pointer items-center'}>
+                            <div className={'relative'} onClick={() => open()}>
+                                <Image width={80} height={80} className={'w-20 h-20 rounded-full ring-2 object-cover'}
+                                       src={img?.secure_url || user?.avatar || '/noAvatar.png'}
+                                       alt=""
+                                />
+                                <div className={'absolute text-6xl text-gray-200 top-3 left-5'}><span>+</span></div>
+                            </div>
                             {
                                 img
                                 ? <form action={add}>
@@ -66,7 +69,6 @@ function StoryList(props: StoryListProps) {
                                 </form>
                                 : <span className={'font-medium'}>Add A Story</span>
                             }
-                            <div className={'absolute text-6xl text-gray-200 top-3'}><span>+</span></div>
                         </div>
                     )
                 }}

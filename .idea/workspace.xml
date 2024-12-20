@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="feat: t">
-      <change afterPath="$PROJECT_DIR$/app/components/AddPostButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/StoryList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Feed/PostInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/AddPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AddPost.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Feed/CommentList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/CommentList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Feed/Comments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/Comments.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Feed/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Feed/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/Post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/StoryList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/StoryList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,26 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript 调试.localhost:3000.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "20.18.1",
-    "javascript.nodejs.core.library.typings.version": "20.17.10",
-    "last_opened_file_path": "C:/Users/wty33/WebstormProjects/next-social-safak-github",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "D:/fnm/aliases/default/node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "web-ide.project.structure",
-    "ts.external.directory.path": "D:\\WebstormProjects\\next-social\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript 调试.localhost:3000.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.18.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.17.10&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wty33/WebstormProjects/next-social-safak-github&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;D:/fnm/aliases/default/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebstormProjects\\next-social\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wty33\WebstormProjects\next-social" />
@@ -130,6 +123,7 @@
       <workItem from="1734419287685" duration="7434000" />
       <workItem from="1734485783040" duration="21324000" />
       <workItem from="1734571020729" duration="19517000" />
+      <workItem from="1734659092706" duration="4318000" />
     </task>
     <task id="LOCAL-00001" summary="feat: NavBar">
       <option name="closed" value="true" />

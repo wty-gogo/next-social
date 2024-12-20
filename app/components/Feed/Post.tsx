@@ -3,6 +3,8 @@ import Comments from '@/app/components/Feed/Comments'
 import type {Post as PostType, User} from '@prisma/client'
 import PostInteraction from '@/app/components/Feed/PostInteraction'
 import {auth} from '@clerk/nextjs/server'
+import {Suspense} from 'react'
+import PostInfo from '@/app/components/Feed/PostInfo'
 
 
 type FeedPostType = PostType & { user: User } & { likes: { userId: string }[] } & { _count: { comments: number } }
@@ -35,7 +37,9 @@ async function Post(props: PostProps) {
                         }
                     </span>
                 </div>
-                <Image src={'/more.png'} alt={'more'} width={16} height={16} className={'cursor-pointer'}/>
+                {
+                    post.userId === currentUserId &&  <PostInfo postId={post.id}/>
+                }
             </div>
             {/*Desc*/}
             <div className={'flex flex-col gap-4'}>
@@ -54,12 +58,14 @@ async function Post(props: PostProps) {
                 </p>
             </div>
             {/*Interaction*/}
-            <PostInteraction
-                currentUserId={currentUserId}
-                postId={post.id}
-                likes={post.likes.map(v => v.userId)}
-                commentCount={post._count.comments}
-            />
+            <Suspense fallback={'pending...'}>
+                <PostInteraction
+                    currentUserId={currentUserId}
+                    postId={post.id}
+                    likes={post.likes.map(v => v.userId)}
+                    commentCount={post._count.comments}
+                />
+            </Suspense>
             <Comments postId={post.id}/>
         </div>
     )
