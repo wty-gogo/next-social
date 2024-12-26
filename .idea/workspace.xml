@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="feat: t">
-      <change afterPath="$PROJECT_DIR$/app/components/Feed/PostInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="609ba634-49c0-4874-97c5-65a41726c5c4" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Feed/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/Post.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/StoryList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/StoryList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Feed/Comments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feed/Comments.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,20 +60,21 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.18.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.17.10&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/wty33/WebstormProjects/next-social-safak-github&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WebstormProjects/next-social&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;D:/fnm/aliases/default/node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\WebstormProjects\\next-social\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\next-social" />
       <recent name="C:\Users\wty33\WebstormProjects\next-social" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -84,7 +86,10 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="localhost:3000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
+    <configuration default="true" type="JavascriptDebugType" engineId="37cae5b9-e8b2-4949-9172-aafa37fbc09c">
+      <method v="2" />
+    </configuration>
+    <configuration name="localhost:3000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="37cae5b9-e8b2-4949-9172-aafa37fbc09c" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -96,7 +101,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
       </set>
     </attachedChunks>
   </component>
@@ -123,7 +128,12 @@
       <workItem from="1734419287685" duration="7434000" />
       <workItem from="1734485783040" duration="21324000" />
       <workItem from="1734571020729" duration="19517000" />
-      <workItem from="1734659092706" duration="4318000" />
+      <workItem from="1734659092706" duration="7746000" />
+      <workItem from="1734678525188" duration="3293000" />
+      <workItem from="1735110366907" duration="2714000" />
+      <workItem from="1735177058310" duration="329000" />
+      <workItem from="1735177404386" duration="4100000" />
+      <workItem from="1735182193002" duration="2419000" />
     </task>
     <task id="LOCAL-00001" summary="feat: NavBar">
       <option name="closed" value="true" />
@@ -221,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734414985959</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: 完成大多数内容">
+      <option name="closed" value="true" />
+      <created>1734665002228</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1734665002228</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +268,8 @@
     <MESSAGE value="fix: 构建失败修复" />
     <MESSAGE value="feat: 好友请求" />
     <MESSAGE value="feat: 新增" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增" />
+    <MESSAGE value="feat: t" />
+    <MESSAGE value="feat: 完成大多数内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 完成大多数内容" />
   </component>
 </project>

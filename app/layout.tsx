@@ -36,8 +36,11 @@ export default function RootLayout(
             <div className="w-full bg-white px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
                 <Navbar/>
             </div>
-            <div className="w-full bg-slate-100 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+            <div className="w-full bg-slate-100 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 pb-4">
                 {children}
+            </div>
+            <div className={'p-2 text-center bg-slate-100 border-t'}>
+                浙ICP备2022011232号-1
             </div>
             </body>
             </html>

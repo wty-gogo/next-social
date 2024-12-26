@@ -352,3 +352,36 @@ export const deletePost = async (postId: number) => {
     }
 
 }
+
+
+export const likeComment = async (commentId: number) => {
+    const {userId: currentUserId} = await auth()
+    if (!currentUserId) {
+        throw new Error('User is not authorized')
+    }
+    try {
+        const existingLike = await prisma.like.findFirst({
+            where: {
+                userId: currentUserId,
+                commentId: commentId
+            }
+        })
+        if (!!existingLike) {
+            await prisma.like.delete({
+                where: {
+                    id: existingLike.id
+                }
+            })
+        } else {
+            await prisma.like.create({
+                data: {
+                    userId: currentUserId,
+                    commentId: commentId
+                }
+            })
+        }
+    } catch (e) {
+        console.error(e)
+        throw e
+    }
+}

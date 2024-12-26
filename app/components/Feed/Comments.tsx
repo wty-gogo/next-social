@@ -3,6 +3,7 @@ import {prisma} from '@/lib'
 import CommentList from '@/app/components/Feed/CommentList'
 import {auth} from '@clerk/nextjs/server'
 import {redirect} from 'next/navigation'
+import {userInfo} from 'node:os'
 
 type CommentProps = {
     postId: number
@@ -29,7 +30,8 @@ async function Comments(props: CommentProps) {
             postId: postId
         },
         include: {
-            user: true
+            user: true,
+            likes: true
         },
         orderBy: {
             createAt: 'desc'
